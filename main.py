@@ -59,6 +59,6 @@ target = ku.to_categorical(target, num_classes=total_words+1)
 
 
 
-nn_model = model(train, target, epochs=160, verbose=1)
+nn_model = model.fit(train, target, epochs=160, verbose=1)
 
 save_model(nn_model)
